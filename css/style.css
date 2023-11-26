@@ -1,0 +1,241 @@
+/* Importando fontes (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Salsa&display=swap');
+
+/* Importando ícones (Bootstrap Icons) */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+/* Variáveis */
+:root {
+	--cor0: #46e5e8;
+	--cor1: #49c2f2;
+	--cor2: #4d8ddb;
+	--cor3: #4968f2;
+	--cor4: #5346e8;
+	--cor5: #463ad6;
+	--fonte-padrao: 'Noto Sans', sans-serif;
+	--fonte-destaque: 'Salsa', cursive;
+}
+
+/* Geral */
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--fonte-padrao);
+	font-size: 100%;
+	color: #373737;
+	background: #eee;
+}
+
+/* Cabeçalho */
+.cabecalho {
+	text-align: center;
+	padding: 4rem 0;
+}
+
+.cabecalho img {
+	margin-bottom: 1rem;
+}
+
+.cabecalho h1 {
+	font-family: var(--fonte-destaque);
+}
+
+/* Navbar */
+#navBar {
+	position: sticky;
+	top: 0;
+	text-align: center;
+	background: var(--cor2);
+}
+
+.area-links-nav {
+	font-size: 0;
+}
+
+.area-links-nav a {
+	display: inline-block;
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: #fff;
+	padding: 1.5rem 1.2rem;
+	transition: .5s;
+}
+
+.area-links-nav a:hover {
+	background: var(--cor3);
+}
+
+#btnMenu {
+	display: none;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+	min-height: 60vh;
+	margin: 4rem auto 0;
+}
+
+/* Área de acessibilidade */
+.area-acessibilidade {
+	display: flex;
+	gap: .6rem;
+	position: fixed;
+	left: 1rem;
+	bottom: 1rem;
+}
+
+.btn-acessibilidade {
+	display: none;
+	font-size: 1.1rem;
+	color: #fff;
+	background: var(--cor4);
+	padding: 1.1rem;
+	border-radius: .6rem;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn-acessibilidade:hover {
+	background: var(--cor5);
+}
+
+#btnExpandir {
+	display: block;
+}
+
+/* Rodapé */
+.rodape {
+	text-align: center;
+	padding: 5rem 0;
+}
+
+.copyright {
+	font-size: 1.1rem;
+	font-style: italic;
+	margin-bottom: .6rem;
+}
+
+.copyright-img a {
+	text-decoration: none;
+	color: var(--cor3);
+}
+
+.copyright-img a:hover {
+	text-decoration: underline;
+}
+
+/* Estilos adicionais (JavaScript) */
+.tema-escuro {
+	color: #fff;
+	background: #1f1f1f;
+}
+
+.tema-escuro .copyright-img a {
+	color: var(--cor1);
+}
+
+.ativo {
+	display: block;
+}
+
+/* Responsividade */
+
+/* Smartphones - Até 600px */
+@media only screen and (max-width: 600px) {
+	.cabecalho img {
+		width: 7rem;
+	}
+
+	.cabecalho h1 {
+		font-size: 1.7rem;
+	}
+
+	.area-links-nav {
+		display: none;
+	}
+
+	.area-links-nav a {
+		font-size: .95rem;
+	}
+
+	#navBar.responsiva .area-links-nav {
+		display: block;
+		position: absolute;
+		top: 100%;
+		background: var(--cor3);
+		width: 100%;
+	}
+
+	#navBar.responsiva .area-links-nav a {
+		display: block;
+	}
+
+	#btnMenu {
+		display: inline-block;
+		font-size: 1.7rem;
+		color: #fff;
+		background: transparent;
+		padding: 1rem;
+	}
+
+	.area-acessibilidade {
+		flex-direction: column-reverse;
+	}
+
+	.btn-acessibilidade {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+
+	.copyright {
+		font-size: .95rem;
+	}
+
+	.copyright-img {
+		font-size: .83rem;
+	}
+}
+
+/* Smartphones grandes e tablets em modo retrato - 600px para cima */
+@media only screen and (min-width: 600px) {
+	.area-links-nav {
+		display: none;
+	}
+
+	#navBar.responsiva .area-links-nav {
+		display: block;
+		position: absolute;
+		top: 100%;
+		background: var(--cor3);
+		width: 100%;
+	}
+
+	#navBar.responsiva .area-links-nav a {
+		display: block;
+	}
+
+	#btnMenu {
+		display: inline-block;
+		font-size: 1.7rem;
+		color: #fff;
+		background: transparent;
+		padding: 1rem;
+	}
+}
+
+/* Tablets em modo paisagem - 768px para cima */
+@media only screen and (min-width: 768px) {
+	.area-links-nav {
+		display: block;
+	}
+
+	#btnMenu {
+		display: none;
+	}
+}
+

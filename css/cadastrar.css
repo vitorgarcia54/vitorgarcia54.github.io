@@ -1,0 +1,147 @@
+/* Conteúdo principal */
+.conteudo-principal {
+	max-width: 90%;
+}
+
+/* Área do formulário de cadastro */
+.area-form-cadastro {
+	background: #fff;
+	width: 30rem;
+	max-width: 100%;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	margin: auto;
+}
+
+.cabecalho-form-cadastro {
+	text-align: center;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1rem;
+}
+
+.cabecalho-form-cadastro h1 {
+	font-size: 1.7rem;
+	margin-bottom: .6rem;
+}
+
+.area-campos-form {
+	margin-bottom: 1rem;
+}
+
+.area-campos-form label {
+	display: inline-block;
+	font-size: 1.1rem;
+	margin-bottom: .6rem;
+}
+
+.campo-obrigatorio {
+	color: #ff0000;
+}
+
+.campos-form {
+	display: block;
+	font-size: 1rem;
+	font-family: inherit;
+	color: inherit;
+	width: 100%;
+	padding: .8rem;
+	border: 1px solid #ddd;
+	margin-bottom: .6rem;
+}
+
+.campos-form:focus {
+	outline: 1px solid var(--cor2);
+	box-shadow: 0px 0px 3px var(--cor2);
+}
+
+.msg-erro {
+	display: block;
+	font-size: .9rem;
+	color: #ff0000;
+}
+
+.area-mostrar-senha label,
+.area-radio label {
+	font-size: 1rem;
+}
+
+.area-campos-radio {
+	text-align: center;
+}
+
+.p-radio {
+	font-size: 1.1rem;
+	margin-bottom: .6rem;
+}
+
+.area-radio {
+	display: inline-block;
+	margin: 0 .6rem;
+}
+
+.area-campos-opcionais {
+	display: none;
+}
+
+.btn-submit {
+	display: block;
+	font-size: 1.3rem;
+	color: #fff;
+	background: var(--cor2);
+	padding: 1rem 2.3rem;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn-submit:hover {
+	background: var(--cor3);
+}
+
+/* Estilos adicionais (JavaScript) */
+.tema-escuro .area-form-cadastro {
+	background: #2f2f2f;
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .cabecalho-form-cadastro {
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .campos-form {
+	background: #1f1f1f;
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .area-campos-form .erro,
+.area-campos-form .erro {
+	outline: 1px solid #ff0000;
+	box-shadow: 0px 0px 3px #ff0000;
+}
+
+/* Responsividade */
+
+/* Smartphones - Até 600px */
+@media only screen and (max-width: 600px) {
+	.cabecalho-form-cadastro h1 {
+		font-size: 1.5rem;
+	}
+
+	.area-campos-form label,
+	.p-radio {
+		font-size: 1rem;		
+	}
+
+	.campos-form,
+	.area-mostrar-senha label,
+	.area-radio label {
+		font-size: .87rem;
+	}
+
+	.btn-submit {
+		font-size: .95rem;
+		padding: .9rem 1.8rem;
+	}
+}
+

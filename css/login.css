@@ -1,0 +1,166 @@
+/* Conteúdo principal */
+.conteudo-principal {
+	max-width: 90%;
+}
+
+.conteudo-principal h1 {
+	text-align: center;
+	margin-bottom: 1.3rem;
+}
+
+.area-escolha {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 4rem;
+}
+
+.btn-escolha {
+	font-size: 1.1rem;
+	font-family: inherit;
+	color: #fff;
+	background: var(--cor2);
+	padding: 1.2rem 1.4rem;
+	border-radius: .8rem;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn-escolha:hover {
+	background: var(--cor3);
+}
+
+.area-form-login {
+	display: none;
+	background: #fff;
+	width: 30rem;
+	max-width: 100%;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	margin: auto;
+}
+
+.cabecalho-form-login {
+	text-align: center;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1rem;
+}
+
+.cabecalho-form-login h2 {
+	font-size: 1.7rem;
+}
+
+.area-campos-form {
+	margin-bottom: 1rem;
+}
+
+.area-campos-form label {
+	display: inline-block;
+	font-size: 1.1rem;
+	margin-bottom: .6rem;
+}
+
+.campo-obrigatorio {
+	color: #ff0000;
+}
+
+.campos-form {
+	display: block;
+	font-size: 1rem;
+	font-family: inherit;
+	color: inherit;
+	width: 100%;
+	padding: .8rem;
+	border: 1px solid #ddd;
+	margin-bottom: .6rem;
+}
+
+.campos-form:focus {
+	outline: 1px solid var(--cor2);
+	box-shadow: 0px 0px 3px var(--cor2);
+}
+
+.msg-erro {
+	font-size: .9rem;
+	color: #ff0000;
+}
+
+.area-mostrar-senha label {
+	font-size: 1rem;
+}
+
+.btn-submit {
+	display: block;
+	font-size: 1.3rem;
+	color: #fff;
+	background: var(--cor2);
+	padding: 1rem 2.3rem;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn-submit:hover {
+	background: var(--cor3);
+}
+
+/* Estilos adicionais (JavaScript) */
+.tema-escuro .area-form-login {
+	background: #2f2f2f;
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .cabecalho-form-login {
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .campos-form {
+	background: #1f1f1f;
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .area-campos-form .erro,
+.area-campos-form .erro {
+	outline: 1px solid #ff0000;
+	box-shadow: 0px 0px 3px #ff0000;
+}
+
+/* Responsividade */
+
+/* Smartphones - Até 600px */
+@media only screen and (max-width: 600px) {
+	.conteudo-principal h1 {
+		font-size: 1.7rem;
+	}
+
+	.area-escolha {
+		gap: .8rem;
+	}
+
+	.btn-escolha {
+		font-size: .9rem;
+		padding: 1rem .9rem;
+	}
+
+	.cabecalho-form-login h2 {
+		font-size: 1.4rem;
+	}
+
+	.area-campos-form label {
+		font-size: 1rem;		
+	}
+
+	.campos-form {
+		font-size: .87rem;
+	}
+
+	.area-mostrar-senha label {
+		font-size: .87rem;
+	}
+
+	.btn-submit {
+		font-size: .95rem;
+		padding: .9rem 1.8rem;
+	}
+}

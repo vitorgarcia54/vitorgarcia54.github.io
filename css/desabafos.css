@@ -1,0 +1,285 @@
+/* Conteúdo principal */
+.conteudo-principal {
+	max-width: 80%;
+}
+
+.conteudo-principal h1 {
+	text-align: center;
+	margin-bottom: 1.3rem;
+}
+
+.area-principal {
+	display: flex;
+	gap: 5%;
+}
+
+/* Área dos desabafos */
+.area-desabafos {
+	width: 60%;
+}
+
+.desabafo {
+	background: #fff;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	margin-bottom: 1.3rem;
+}
+
+.desabafo:last-child {
+	margin-bottom: 0;
+}
+
+.cabecalho-desabafo {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1rem;
+}
+
+.titulo-desabafo {
+	margin-bottom: .6rem;
+}
+
+.area-informacoes-desabafo::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.usuario {
+	margin-right: 1rem;
+}
+
+.usuario,
+.email {
+	float: left;
+}
+
+.categoria {
+	float: right;
+}
+
+.destaque {
+	font-weight: bold;
+}
+
+.conteudo-desabafo {
+	text-align: justify;
+	padding-bottom: 1rem;
+}
+
+.btn-ver-mais {
+	display: inline-block;
+	font-size: 1.1rem;
+	text-decoration: none;
+	color: #fff;
+	background: var(--cor2);
+	padding: 1rem 1.3rem;
+	transition: .5s;
+}
+
+.btn-ver-mais:hover {
+	background: var(--cor3);
+}
+
+.sidebar {
+	width: 35%;
+}
+
+.area-filtrar {
+	position: sticky;
+	top: 5.8rem;
+	background: #fff;
+	padding: 1rem;
+	border: 1px solid #ddd;
+}
+
+.area-filtrar h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+#filtrar {
+	font-size: .9rem;
+	font-family: inherit;
+	color: inherit;
+	padding: .2rem;
+	border: 1px solid #ddd;
+}
+
+#filtrar:focus {
+	outline: 1px solid var(--cor2);
+	box-shadow: 0px 0px 3px var(--cor2);
+}
+
+/* Estilos adicionais (JavaScript) */
+.tema-escuro .desabafo,
+.tema-escuro .area-filtrar {
+	background: #2f2f2f;
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .cabecalho-desabafo {
+	border-color: #3f3f3f;
+}
+
+.tema-escuro #filtrar {
+	background: #1f1f1f;
+	border-color: #3f3f3f;
+}
+
+.sem-margem {
+	margin-bottom: 0;
+}
+
+/* Responsividade */
+
+/* Smartphones - Até 600px */
+@media only screen and (max-width: 600px) {
+	.conteudo-principal {
+		max-width: 100%;
+	}
+
+	.conteudo-principal h1 {
+		font-size: 1.5rem;
+	}
+
+	.area-principal {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.area-desabafos {
+		width: 85%;
+		margin-top: 1.3rem;
+	}
+
+	.desabafo {
+		font-size: .92rem;
+		text-align: center;
+	}
+
+	.area-informacoes-desabafo p {
+		float: none;
+	}
+
+	.usuario,
+	.email {
+		margin-bottom: .6rem;
+	}
+
+	.btn-ver-mais {
+		font-size: 1rem;
+		padding: .95rem 1rem;
+	}
+
+	.sidebar {
+		width: 85%;
+	}
+
+	.area-filtrar {
+		position: static;
+		text-align: center;
+	}
+
+	.area-filtrar h3 {
+		font-size: 1.3rem;
+	}
+}
+
+/* Smartphones grandes e tablets em modo retrato - 600px para cima */
+@media only screen and (min-width: 600px) {
+	.conteudo-principal {
+		max-width: 80%;
+	}
+
+	.area-principal {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.area-desabafos {
+		width: 65%;
+		margin-top: 1.3rem;
+	}
+
+	.desabafo {
+		text-align: center;
+	}
+
+	.area-informacoes-desabafo p {
+		float: none;
+	}
+
+	.usuario,
+	.email {
+		margin-bottom: .6rem;
+	}
+
+	.sidebar {
+		width: 65%;
+	}
+
+	.area-filtrar {
+		position: static;
+		text-align: center;
+	}
+}
+
+/* Tablets em modo paisagem - 768px para cima */
+@media only screen and (min-width: 768px) {
+	.area-desabafos {
+		width: 55%;
+	}
+
+	.sidebar {
+		width: 55%;
+	}
+}
+
+/* Desktops e laptops - 992px para cima */
+@media only screen and (min-width: 992px) {
+	.area-desabafos {
+		width: 45%;
+	}
+
+	.sidebar {
+		width: 45%;
+	}
+}
+
+/* Dispositivos grandes (desktops e laptops grandes, TVs etc.) - 1200px para cima */
+@media only screen and (min-width: 1200px) {
+	.area-principal {
+		flex-direction: row;
+		align-items: normal;
+	}
+
+	.area-desabafos {
+		width: 60%;
+		margin-top: 0;
+	}
+
+	.desabafo {
+		text-align: left;
+	}
+
+	.area-informacoes-desabafo .usuario,
+	.area-informacoes-desabafo .email {
+		float: left;
+		margin-bottom: 0;
+	}
+
+	.area-informacoes-desabafo .categoria {
+		float: right;
+	}
+
+	.sidebar {
+		width: 35%;
+	}
+
+	.area-filtrar {
+		position: sticky;
+		top: 5.8rem;
+		text-align: left;
+	}
+}

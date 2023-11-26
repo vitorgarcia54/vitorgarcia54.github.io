@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Página de desabafo do Quebrando Tabu">
+	<meta name="keywords" content="desabafar, desabafo, desabafe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quebrando Tabu | Faça seu desabafo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/desabafar.css">
+	<link rel="shortcut icon" href="imagens/icones/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- Cabeçalho -->
+	<header class="cabecalho">
+		<img src="imagens/icones/feliz.png" alt="Ícone de um cérebro sorrindo">
+		<h1 class="acessibilidade">Quebrando Tabu</h1>
+	</header>
+	<!-- Fim do cabeçalho -->
+
+	<!-- Navbar -->
+	<nav id="navBar">
+		<div class="area-links-nav">
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-postcard"></i> Desabafos
+			</a>
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-person-circle"></i> Minha Conta
+			</a>
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-box-arrow-in-right"></i> Sair
+			</a>
+		</div>
+		<button type="button" id="btnMenu">
+			<i class="bi bi-list" id="iconeMenu"></i>
+		</button>
+	</nav>
+	<!-- Fim da navbar -->
+
+	<!-- Conteúdo principal -->
+	<main class="conteudo-principal">
+		<!-- Área do formulário de desabafo -->
+		<section class="area-form-desabafo">
+			<header class="cabecalho-form-desabafo">
+				<h1 class="acessibilidade">Faça seu desabafo</h1>
+				<p class="acessibilidade">
+					Queremos muito te ouvir! <i class="bi bi-emoji-smile"></i>
+				</p>
+			</header>
+			<form id="formDesabafo">
+				<div class="area-campos-form">
+					<label for="titulo" class="acessibilidade">
+						Título <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="text" name="titulo" id="titulo" class="campos-form acessibilidade" placeholder="Digite um título" maxlength="50" required>
+					<span class="msg-erro acessibilidade" id="msgErroTitulo"></span>
+				</div>
+				<div class="area-campos-form">
+					<label for="categoria" class="acessibilidade">
+						Categoria <span class="campo-obrigatorio">*</span>
+					</label>
+					<select name="categoria" id="categoria" class="campos-form acessibilidade" required>
+						<option value="">Selecione uma opção</option>
+						<option value="abuso">Abuso</option>
+						<option value="racismo">Racismo</option>
+						<option value="depressao">Depressao</option>
+						<option value="homofobia">Homofobia</option>
+						<option value="transfobia">Transfobia</option>
+					</select>
+					<span class="msg-erro acessibilidade" id="msgErroCategoria"></span>
+				</div>
+				<div class="area-campos-form">
+					<label for="desabafo" class="acessibilidade">
+						Seu desabafo <span class="campo-obrigatorio">*</span>
+					</label>
+					<textarea name="desabafo" id="desabafo" class="campos-form acessibilidade" placeholder="Digite aqui o seu desabafo" maxlength="700" required></textarea>
+					<span class="msg-erro acessibilidade" id="msgErroDesabafo"></span>
+				</div>
+				<button type="submit" class="btn-submit acessibilidade">Enviar</button>
+			</form>
+			<!-- Fim da área do formulário de desabafo -->
+		</section>
+	</main>	
+	<!-- Fim do conteúdo principal -->
+
+	<!-- Área de acessibilidade -->
+	<div class="area-acessibilidade">
+		<button type="button" class="btn-acessibilidade" id="btnExpandir">
+			<i class="bi bi-universal-access"></i>
+		</button>
+		<button type="button" class="btn-acessibilidade" id="btnMudarTema">
+			<i class="bi bi-moon-fill" id="iconeTema"></i>
+		</button>
+		<button type="button" class="btn-acessibilidade" id="btnAumentarFonte">A+</button>
+		<button type="button" class="btn-acessibilidade" id="btnDiminuirFonte">A-</button>
+	</div>
+	<!-- Fim da área de acessibilidade -->
+
+	<!-- Rodapé -->
+	<footer class="rodape">
+		<p class="copyright acessibilidade">&copy; 2023 Quebrando Tabu</p>
+		<p class="copyright-img acessibilidade">
+			Logo e favicon criados por <a href="https://www.flaticon.com/br/icones-gratis/cerebro" title="cérebro ícones">juicy_fish - Flaticon</a>
+		</p>
+	</footer>
+	<!-- Fim do rodapé -->
+
+	<script src="javascript/jquery-3.7.1.min.js"></script>
+	<script src="javascript/script.js"></script>
+	<script src="javascript/desabafar.js"></script>
+</body>
+</html>

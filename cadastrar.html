@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Página de cadastro de usuários do Quebrando Tabu">
+	<meta name="keywords" content="desabafar, cadastrar, cadastro">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quebrando Tabu | Cadastre-se</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cadastrar.css">
+	<link rel="shortcut icon" href="imagens/icones/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- Cabeçalho -->
+	<header class="cabecalho">
+		<img src="imagens/icones/feliz.png" alt="Ícone de um cérebro sorrindo">
+		<h1 class="acessibilidade">Quebrando Tabu</h1>
+	</header>
+	<!-- Fim do cabeçalho -->
+
+	<!-- Navbar -->
+	<nav id="navBar">
+		<div class="area-links-nav">
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-house-door"></i> Home
+			</a>
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-info-circle"></i> Informações Úteis
+			</a>
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-file-person"></i> Sobre Nós
+			</a>
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-door-open-fill"></i> Entrar
+			</a>
+		</div>
+		<button type="button" id="btnMenu">
+			<i class="bi bi-list" id="iconeMenu"></i>
+		</button>
+	</nav>
+	<!-- Fim da navbar -->
+
+	<!-- Conteúdo principal -->
+	<main class="conteudo-principal">
+		<!-- Área do formulário de cadastro -->
+		<section class="area-form-cadastro">
+			<header class="cabecalho-form-cadastro">
+				<h1 class="acessibilidade">Faça seu cadastro</h1>
+			</header>
+			<form id="formCadastro">
+				<div class="area-campos-form">
+					<label for="usuario" class="acessibilidade">
+						Nome de usuário: <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="text" name="usuario" id="usuario" class="campos-form acessibilidade" placeholder="Digite seu nome de usuário" maxlength="50" required>
+					<span class="msg-erro acessibilidade" id="msgErroUsuario"></span>
+				</div>
+				<div class="area-campos-form">
+					<label for="senha" class="acessibilidade">
+						Senha: <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="password" name="senha" id="senha" class="campos-form acessibilidade" placeholder="Digite sua senha" minlength="8" maxlength="50" required>
+					<div class="area-mostrar-senha">
+						<input type="checkbox" name="mostrar-senha" id="mostrarSenha">
+						<label for="mostrarSenha" class="acessibilidade">Mostrar senha</label>
+					</div>
+					<span class="msg-erro acessibilidade" id="msgErroSenha"></span>
+				</div>
+				<div class="area-campos-form area-campos-radio">
+					<p class="p-radio acessibilidade">
+						Deseja receber apoio de um voluntário? <span class="campo-obrigatorio">*</span>
+					</p>
+					<div class="area-radio">
+						<input type="radio" name="ap-voluntario" id="simApVol">
+						<label for="simApVol" class="acessibilidade">Sim</label>
+					</div>
+					<div class="area-radio">
+						<input type="radio" name="ap-voluntario" id="naoApVol" checked>
+						<label for="naoApVol" class="acessibilidade">Não</label>
+					</div>
+					<span class="msg-erro acessibilidade" id="msgErroApVol"></span>
+				</div>
+				<div class="area-campos-form area-campos-radio">
+					<p class="p-radio acessibilidade">
+						Deseja ser um voluntário? <span class="campo-obrigatorio">*</span>
+					</p>
+					<div class="area-radio">
+						<input type="radio" name="ser-voluntario" id="simSerVol">
+						<label for="simSerVol" class="acessibilidade">Sim</label>
+					</div>
+					<div class="area-radio">
+						<input type="radio" name="ser-voluntario" id="naoSerVol" checked>
+						<label for="naoSerVol" class="acessibilidade">Não</label>
+					</div>
+					<span class="msg-erro acessibilidade" id="msgErroSerVol"></span>
+				</div>
+				<div class="area-campos-form area-campos-radio">
+					<p class="p-radio acessibilidade">
+						Deseja receber acompanhamento psicológico? <span class="campo-obrigatorio">*</span>
+					</p>
+					<div class="area-radio">
+						<input type="radio" name="ac-psic" id="simAcPsic">
+						<label for="simAcPsic" class="acessibilidade">Sim</label>
+					</div>
+					<div class="area-radio">
+						<input type="radio" name="ac-psic" id="naoAcPsic" checked>
+						<label for="naoAcPsic" class="acessibilidade">Não</label>
+					</div>
+					<span class="msg-erro acessibilidade" id="msgErroAcPsic"></span>
+				</div>
+				<div class="area-campos-form area-campos-opcionais">
+					<label for="telefone" class="acessibilidade">
+						Telefone <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="tel" name="telefone" id="telefone" class="campos-form acessibilidade" placeholder="Digite seu telefone" maxlength="11" required>
+					<span class="msg-erro acessibilidade" id="msgErroTel"></span>
+				</div>
+				<div class="area-campos-form area-campos-opcionais">
+					<label for="email" class="acessibilidade">
+						E-mail <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="email" name="email" id="email" class="campos-form acessibilidade" placeholder="Digite seu email" maxlength="50" required>
+					<span class="msg-erro acessibilidade" id="msgErroEmail"></span>
+				</div>
+				<button type="submit" class="btn-submit acessibilidade">Enviar</button>
+			</form>
+			<!-- Fim da área do formulário de cadastro -->
+		</section>
+	</main>	
+	<!-- Fim do conteúdo principal -->
+
+	<!-- Área de acessibilidade -->
+	<div class="area-acessibilidade">
+		<button type="button" class="btn-acessibilidade" id="btnExpandir">
+			<i class="bi bi-universal-access"></i>
+		</button>
+		<button type="button" class="btn-acessibilidade" id="btnMudarTema">
+			<i class="bi bi-moon-fill" id="iconeTema"></i>
+		</button>
+		<button type="button" class="btn-acessibilidade" id="btnAumentarFonte">A+</button>
+		<button type="button" class="btn-acessibilidade" id="btnDiminuirFonte">A-</button>
+	</div>
+	<!-- Fim da área de acessibilidade -->
+
+	<!-- Rodapé -->
+	<footer class="rodape">
+		<p class="copyright acessibilidade">&copy; 2023 Quebrando Tabu</p>
+		<p class="copyright-img acessibilidade">
+			Logo e favicon criados por <a href="https://www.flaticon.com/br/icones-gratis/cerebro" title="cérebro ícones">juicy_fish - Flaticon</a>
+		</p>
+	</footer>
+	<!-- Fim do rodapé -->
+
+	<script src="javascript/jquery-3.7.1.min.js"></script>
+	<script src="javascript/script.js"></script>
+	<script src="javascript/cadastrar.js"></script>
+</body>
+</html>

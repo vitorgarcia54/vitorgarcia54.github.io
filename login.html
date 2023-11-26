@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Página de login do Quebrando Tabu">
+	<meta name="keywords" content="desabafar, entrar, login">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quebrando Tabu | Faça login</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="shortcut icon" href="imagens/icones/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- Cabeçalho -->
+	<header class="cabecalho">
+		<img src="imagens/icones/feliz.png" alt="Ícone de um cérebro sorrindo">
+		<h1 class="acessibilidade">Quebrando Tabu</h1>
+	</header>
+	<!-- Fim do cabeçalho -->
+
+	<!-- Navbar -->
+	<nav id="navBar">
+		<div class="area-links-nav">
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-house-door"></i> Home
+			</a>
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-info-circle"></i> Informações Úteis
+			</a>
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-file-person"></i> Sobre Nós
+			</a>
+			<a href="#!" class="acessibilidade">
+				<i class="bi bi-person-add"></i> Cadastrar-se
+			</a>
+		</div>
+		<button type="button" id="btnMenu">
+			<i class="bi bi-list" id="iconeMenu"></i>
+		</button>
+	</nav>
+	<!-- Fim da navbar -->
+
+	<!-- Conteúdo principal -->
+	<main class="conteudo-principal">
+		<h1 class="acessibilidade">Você é...</h1>
+		<div class="area-escolha">
+			<button type="button" class="btn-escolha acessibilidade" id="btnEscolhaUsuario">Usuário</button>
+			<button type="button" class="btn-escolha acessibilidade" id="btnEscolhaPsic">Psicólogo</button>
+			<button type="button" class="btn-escolha acessibilidade" id="btnEscolhaAdmin">Admin</button>
+		</div>
+		<section class="area-form-login" id="areaFormUsuario">
+			<header class="cabecalho-form-login">
+				<h2 class="acessibilidade">
+					Faça login, caro usuário! <i class="bi bi-emoji-smile"></i>
+				</h2>
+			</header>
+			<form id="formUsuario">
+				<div class="area-campos-form">
+					<label for="usuario" class="acessibilidade">
+						Nome de usuário: <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="text" name="usuario" id="usuario" class="campos-form acessibilidade" placeholder="Digite seu nome de usuário" maxlength="50" required>
+					<span class="msg-erro acessibilidade" id="msgErroUsuario"></span>
+				</div>
+				<div class="area-campos-form">
+					<label for="senha" class="acessibilidade">
+						Senha <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="password" name="senha" id="senha" class="campos-form acessibilidade" placeholder="Digite sua senha" minlength="8" maxlength="50" required>
+					<div class="area-mostrar-senha">
+						<input type="checkbox" name="mostrar-senha" id="mostrarSenha">
+						<label for="mostrarSenha" class="acessibilidade">Mostrar senha</label>
+					</div>
+					<span class="msg-erro acessibilidade" id="msgErroSenha"></span>
+				</div>
+				<button type="submit" class="btn-submit acessibilidade">Entrar</button>
+			</form>
+		</section>
+		<section class="area-form-login" id="areaFormAdmin">
+			<header class="cabecalho-form-login">
+				<h2 class="acessibilidade">
+					Faça login, caro admin! <i class="bi bi-emoji-smile"></i>
+				</h2>
+			</header>
+			<form id="formAdmin">
+				<div class="area-campos-form">
+					<label for="usuarioAdmin" class="acessibilidade">
+						Nome de usuário: <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="text" name="usuario-admin" id="usuarioAdmin" class="campos-form acessibilidade" placeholder="Digite seu nome de usuário" maxlength="50" required>
+					<span class="msg-erro acessibilidade" id="msgErroUsuarioAdmin"></span>
+				</div>
+				<div class="area-campos-form">
+					<label for="senhaAdmin" class="acessibilidade">
+						Senha <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="password" name="senha-admin" id="senhaAdmin" class="campos-form acessibilidade" placeholder="Digite sua senha" minlength="8" maxlength="50" required>
+					<div class="area-mostrar-senha">
+						<input type="checkbox" name="mostrar-senha-admin" id="mostrarSenhaAdmin">
+						<label for="mostrarSenhaAdmin" class="acessibilidade">Mostrar senha</label>
+					</div>
+					<span class="msg-erro" id="msgErroSenhaAdmin"></span>
+				</div>
+				<button type="submit" class="btn-submit acessibilidade">Entrar</button>
+			</form>
+		</section>
+		<section class="area-form-login" id="areaFormPsicologo">
+			<header class="cabecalho-form-login">
+				<h2 class="acessibilidade">
+					Faça login, caro psicólogo! <i class="bi bi-emoji-smile"></i>
+				</h2>
+			</header>
+			<form id="formPsic">
+				<div class="area-campos-form">
+					<label for="email" class="acessibilidade">
+						E-mail: <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="email" name="email" id="email" class="campos-form acessibilidade" placeholder="Digite seu e-mail" maxlength="50" required>
+					<span class="msg-erro acessibilidade" id="msgErroEmail"></span>
+				</div>
+				<div class="area-campos-form">
+					<label for="senhaPsicologo" class="acessibilidade">
+						Senha <span class="campo-obrigatorio">*</span>
+					</label>
+					<input type="password" name="senha-psicologo" id="senhaPsicologo" class="campos-form acessibilidade" placeholder="Digite sua senha" minlength="8" maxlength="50" required>
+					<div class="area-mostrar-senha">
+						<input type="checkbox" name="mostrar-senha-psic" id="mostrarSenhaPsic">
+						<label for="mostrarSenhaPsic" class="acessibilidade">Mostrar senha</label>
+					</div>
+					<span class="msg-erro acessibilidade" id="msgErroSenhaPsicologo"></span>
+				</div>
+				<button type="submit" class="btn-submit acessibilidade">Entrar</button>
+			</form>
+		</section>
+	</main>	
+	<!-- Fim do conteúdo principal -->
+
+	<!-- Área de acessibilidade -->
+	<div class="area-acessibilidade">
+		<button type="button" class="btn-acessibilidade" id="btnExpandir">
+			<i class="bi bi-universal-access"></i>
+		</button>
+		<button type="button" class="btn-acessibilidade" id="btnMudarTema">
+			<i class="bi bi-moon-fill" id="iconeTema"></i>
+		</button>
+		<button type="button" class="btn-acessibilidade" id="btnAumentarFonte">A+</button>
+		<button type="button" class="btn-acessibilidade" id="btnDiminuirFonte">A-</button>
+	</div>
+	<!-- Fim da área de acessibilidade -->
+
+	<!-- Rodapé -->
+	<footer class="rodape">
+		<p class="copyright acessibilidade">&copy; 2023 Quebrando Tabu</p>
+		<p class="copyright-img acessibilidade">
+			Logo e favicon criados por <a href="https://www.flaticon.com/br/icones-gratis/cerebro" title="cérebro ícones">juicy_fish - Flaticon</a>
+		</p>
+	</footer>
+	<!-- Fim do rodapé -->
+
+	<script src="javascript/jquery-3.7.1.min.js"></script>
+	<script src="javascript/script.js"></script>
+	<script src="javascript/login.js"></script>
+</body>
+</html>
