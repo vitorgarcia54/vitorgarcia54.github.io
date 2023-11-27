@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Página de consulta e alteração de dados do Quebrando Tabu">
+	<meta name="keywords" content="desabafar, conta, dados, alterar">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quebrando Tabu | Minha conta</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/minha-conta.css">
+	<link rel="shortcut icon" href="imagens/icones/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- Cabeçalho -->
+	<header class="cabecalho">
+		<img src="imagens/icones/feliz.png" alt="Ícone de um cérebro sorrindo">
+		<h1 class="acessibilidade">Quebrando Tabu</h1>
+	</header>
+	<!-- Fim do cabeçalho -->
+
+	<!-- Navbar -->
+	<nav id="navBar">
+		<div class="area-links-nav">
+            <a href="#!" class="acessibilidade">
+                <i class="bi bi-megaphone"></i> Desabafar
+            </a>
+            <a href="#!" class="acessibilidade">
+				<i class="bi bi-postcard"></i> Desabafos
+			</a>
+            <a href="#!" class="acessibilidade">
+                <i class="bi bi-box-arrow-in-right"></i> Sair
+            </a>
+		</div>
+		<button type="button" id="btnMenu">
+			<i class="bi bi-list" id="iconeMenu"></i>
+		</button>
+	</nav>
+	<!-- Fim da navbar -->
+
+	<!-- Conteúdo principal -->
+	<main class="conteudo-principal">
+        <!-- Área do formulário de alteração de dados -->
+        <section class="area-form-alter-dados">
+            <header class="cabecalho-form-alter-dados">
+                <h1 class="acessibilidade">Visualize seus dados</h1>
+            </header>
+            <form id="formAlter">
+                <div class="area-campos-form">
+                    <label for="usuario" class="acessibilidade">Nome de usuário</label>
+                    <input type="text" name="usuario" id="usuario" class="campos-form acessibilidade" placeholder="Digite um nome de usuário" value="usuario01" readonly>
+                    <span class="msg-erro acessibilidade" id="msgErroUsuario"></span>
+                </div>
+                <div class="area-campos-form">
+                    <label for="senha" class="acessibilidade">Senha</label>
+                    <input type="password" name="senha" id="senha" class="campos-form acessibilidade" placeholder="Digite uma senha" value="12345678" readonly>
+                    <span class="msg-erro acessibilidade" id="msgErroSenha"></span>
+                    <div class="area-mostrar-senha">
+                        <input type="checkbox" name="mostrar-senha" id="mostrarSenha">
+                        <label for="mostrarSenha" class="acessibilidade">Mostrar senha</label>
+                    </div>
+                </div>
+                <div class="area-campos-form">
+                    <label for="apVol" class="acessibilidade">Recebe apoio de voluntários?</label>
+                    <input type="text" name="ap-vol" id="apVol" class="campos-form acessibilidade" placeholder="Digite 'Não' ou 'Sim'" value="Sim" readonly>
+                    <span class="msg-erro acessibilidade" id="msgErroApVol"></span>
+                </div>
+                <div class="area-campos-form">
+                    <label for="ehVol" class="acessibilidade">É voluntário?</label>
+                    <input type="text" name="eh-vol" id="ehVol" class="campos-form acessibilidade" placeholder="Digite 'Não' ou 'Sim'" value="Sim" readonly>
+                    <span class="msg-erro acessibilidade" id="msgErroEhVol"></span>
+                </div>
+                <div class="area-campos-form">
+                    <label for="acPsic" class="acessibilidade">Recebe acompanhamento psicológico?</label>
+                    <input type="text" name="ac-psic" id="acPsic" class="campos-form acessibilidade" placeholder="Digite 'Não' ou 'Sim'" value="Sim" readonly>
+                    <span class="msg-erro acessibilidade" id="msgErroAcPsic"></span>
+                </div>
+                <div class="area-campos-form">
+                    <label for="telefone" class="acessibilidade">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" class="campos-form acessibilidade" placeholder="Digite um telefone" value="11999999999" readonly>
+                    <span class="msg-erro acessibilidade" id="msgErroTelefone"></span>
+                </div>
+                <div class="area-campos-form">
+                    <label for="email" class="acessibilidade">E-mail</label>
+                    <input type="text" name="email" id="email" class="campos-form acessibilidade" placeholder="Digite um e-mail" value="usuario01@email.com" readonly>
+                    <span class="msg-erro acessibilidade" id="msgErroEmail"></span>
+                </div>
+                <div class="area-btns-form">
+                    <button type="button" id="btnAlterarDados" class="acessibilidade">Alterar dados</button>
+                    <button type="submit" id="btnSubmit" class="acessibilidade">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>	
+	<!-- Fim do conteúdo principal -->
+
+	<!-- Área de acessibilidade -->
+	<div class="area-acessibilidade">
+		<button type="button" class="btn-acessibilidade" id="btnExpandir">
+			<i class="bi bi-universal-access"></i>
+		</button>
+		<button type="button" class="btn-acessibilidade" id="btnMudarTema">
+			<i class="bi bi-moon-fill" id="iconeTema"></i>
+		</button>
+		<button type="button" class="btn-acessibilidade" id="btnAumentarFonte">A+</button>
+		<button type="button" class="btn-acessibilidade" id="btnDiminuirFonte">A-</button>
+	</div>
+	<!-- Fim da área de acessibilidade -->
+
+	<!-- Rodapé -->
+	<footer class="rodape">
+		<p class="copyright acessibilidade">&copy; 2023 Quebrando Tabu</p>
+		<p class="copyright-img acessibilidade">
+			Logo e favicon criados por <a href="https://www.flaticon.com/br/icones-gratis/cerebro" title="cérebro ícones">juicy_fish - Flaticon</a>
+		</p>
+	</footer>
+	<!-- Fim do rodapé -->
+
+	<script src="javascript/jquery-3.7.1.min.js"></script>
+	<script src="javascript/script.js"></script>
+	<script src="javascript/minha-conta.js"></script>
+</body>
+</html>

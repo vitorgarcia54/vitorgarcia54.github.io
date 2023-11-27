@@ -1,0 +1,140 @@
+/* Conteúdo principal */
+.conteudo-principal {
+	max-width: 90%;
+}
+
+/* Área do formulário de cadastro */
+.area-form-alter-dados {
+	background: #fff;
+	width: 60rem;
+	max-width: 100%;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	margin: auto;
+}
+
+.cabecalho-form-alter-dados {
+	text-align: center;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1rem;
+}
+
+.cabecalho-form-alter-dados h1 {
+	font-size: 1.7rem;
+	margin-bottom: .6rem;
+}
+
+.area-campos-form {
+	margin-bottom: 1rem;
+}
+
+.area-campos-form label {
+	display: inline-block;
+	font-size: 1.1rem;
+	margin-bottom: .6rem;
+}
+
+.campos-form {
+	display: block;
+	font-size: 1rem;
+	font-family: inherit;
+	color: inherit;
+	width: 100%;
+	padding: .8rem;
+	border: 1px solid #ddd;
+	margin-bottom: .6rem;
+}
+
+.campos-form:focus {
+	outline: 1px solid var(--cor2);
+	box-shadow: 0px 0px 3px var(--cor2);
+}
+
+.msg-erro {
+	display: block;
+	font-size: .9rem;
+	color: #ff0000;
+}
+
+.area-mostrar-senha label {
+	font-size: 1rem;
+}
+
+.area-btns-form {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#btnAlterarDados {
+	font-size: 1.3rem;
+	color: #fff;
+	background: #ff0000;
+	padding: 1rem 1.2rem;
+	cursor: pointer;
+	transition: .5s;
+}
+
+#btnAlterarDados:hover {
+    background: #b80606;
+}
+
+#btnSubmit {
+	display: none;
+	font-size: 1.3rem;
+	color: #fff;
+	background: var(--cor2);
+	padding: 1rem 2.3rem;
+	cursor: pointer;
+	transition: .5s;
+}
+
+#btnSubmit:hover {
+	background: var(--cor3);
+}
+
+/* Estilos adicionais (JavaScript) */
+.tema-escuro .area-form-alter-dados {
+	background: #2f2f2f;
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .cabecalho-form-alter-dados {
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .campos-form {
+	background: #1f1f1f;
+	border-color: #3f3f3f;
+}
+
+.tema-escuro .area-campos-form .erro,
+.area-campos-form .erro {
+	outline: 1px solid #ff0000;
+	box-shadow: 0px 0px 3px #ff0000;
+}
+
+/* Responsividade */
+
+/* Smartphones - Até 600px */
+@media only screen and (max-width: 600px) {
+	.cabecalho-form-alter-dados h1 {
+		font-size: 1.5rem;
+	}
+
+	.area-campos-form label {
+		font-size: 1rem;		
+	}
+
+	.campos-form,
+	.area-mostrar-senha label {
+		font-size: .87rem;
+	}
+
+    #btnAlterarDados,
+	#btnSubmit {
+		font-size: .95rem;
+		padding: .9rem 1rem;
+	}
+}
